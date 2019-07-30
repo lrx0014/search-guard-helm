@@ -17,5 +17,7 @@ RUN elasticsearch-plugin install --batch com.floragunn:search-guard-$(cat /major
 
 RUN plugins/search-guard-$(cat /major)/tools/install_demo_configuration.sh -yic
 
+RUN elasticsearch-plugin install -b analysis-phonetic
+
 #tcnative/openssl
 #RUN wget -P /usr/share/elasticsearch/plugins/search-guard-$(cat /major) "https://bintray.com/floragunncom/netty-tcnative/download_file?file_path=netty-tcnative-openssl-${TC_NATIVE_VERSION}.jar"
