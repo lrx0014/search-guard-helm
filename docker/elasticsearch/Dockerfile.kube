@@ -1,0 +1,3 @@
+FROM floragunncom/sg-elasticsearch:6.8.0-25.1
+
+RUN elasticsearch-plugin install -b analysis-phonetic
